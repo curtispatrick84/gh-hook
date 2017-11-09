@@ -19,6 +19,7 @@ def listen(request, body):
 def not_found_handler():
     return "Not Found"
 
+
 if __name__ == "__main__":
     logging.basicConfig(format='[%(levelname)s] %(asctime)s - %(funcName)s: %(message)s', level=logging.INFO)
 
