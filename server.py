@@ -6,13 +6,13 @@ import json
 
 @hug.post(versions=1)
 def listen(request, body):
-    logging.debug("Received new event")
+    logging.info("Received new event")
 
     if 'X-GITHUB-EVENT' not in request.headers:
-        logging.debug("GitHub event header not set - Ignoring")
+        logging.info("GitHub event header not set - Ignoring")
         return
     else:
-        logging.debug(str(body))
+        logging.info(str(body))
 
 
 @hug.not_found()
