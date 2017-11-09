@@ -22,4 +22,4 @@ def not_found_handler():
 if __name__ == "__main__":
     logging.basicConfig(format='[%(levelname)s] %(asctime)s - %(funcName)s: %(message)s', level=logging.INFO)
 
-    hug.API(__name__).http.serve(port=8801)
+    hug.API(__name__).http.serve(port=8080)

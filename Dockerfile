@@ -13,5 +13,5 @@ RUN pip install -r requirements.txt --pre
 COPY . /gh-listener
 COPY default.nginx.conf /etc/nginx/sites-available/default
 
-EXPOSE 7080
+EXPOSE 8801
 CMD [ "./run.sh" ]
