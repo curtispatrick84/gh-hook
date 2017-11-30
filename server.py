@@ -34,6 +34,7 @@ def createstatus(url, state, context=None, description=None, target=None):
 
     logging.debug(data)
     logging.debug(response.status_code)
+    logging.debug(response.json())
 
 
 @hug.post(versions=1)
