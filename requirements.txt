@@ -1,6 +1,6 @@
-docopt==0.6.2
 hug==2.3.0
 pytest==3.0.5
 pytest-pep8
 pytest-pylint
 requests==2.14.1
+uuid==1.30
